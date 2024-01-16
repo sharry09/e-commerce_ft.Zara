@@ -1,0 +1,293 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+    
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color:#1D232C;
+}
+
+.navbar-links a:hover{
+/* text-decoration:underline; */
+color:#1D232C;
+
+}
+
+.navbar-menu-toggle{
+    display: none;
+}
+/* Side Navbar */
+.side-navbar{
+    background-color: #1D232C;
+    width:50%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:-60%;
+    padding: 20px;
+    color:white;
+    transition: 2s;
+    
+}
+
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+
+.side-navbar-links a{
+    text-decoration: none;
+    color:white;
+}
+
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+
+/* header */
+.header{
+display: flex;
+justify-content: center;
+gap:50px;
+padding: 50px;
+
+}
+
+.header-button{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top: 10px;
+    background-color: #1D232C;
+    color: aliceblue;
+    cursor:pointer;
+    border-radius: 10px;
+    border:none;
+}
+/* Services */
+.service{
+    padding: 20px;
+}
+
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.service-container-2 div{
+    background-color: #f2f4f7;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* New Arrivals */
+
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival button{
+    padding-left:10%;
+    padding-right:10%;
+    padding-top:5%;
+    padding-bottom:5%;
+    margin-top: 10px;
+    color: #1D232C;
+    cursor:pointer;
+    position: absolute;
+    top:50%;
+    left:18%;
+    border-radius: 10px;
+    border:none;
+
+}
+
+/* Newsletter */
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px;
+
+}
+
+.news input{
+padding:11px;
+width:80vw;
+margin-bottom:10px;
+border:solid black 3px;
+}
+.news button{
+    margin-top: 10px;
+    color:#F2F4F7;
+    background-color: #1D232C;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+/* Footer */
+ 
+.footer{
+   margin-top:20px;
+   padding:40px;
+   background-color: #1D232C; 
+   color:#f2f4f7;
+   text-align:center;
+}
+
+/* Product */
+
+.product-section{
+    margin-top: 20px;
+}
+
+
+.product-search{
+    width:80%;
+    border:solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input{
+    border:none;
+    background-color: transparent;
+    width:100%;
+
+}
+
+.product-search input:focus{
+outline:none;
+}
+
+.products{
+    padding:20px;
+    display:flex;
+    gap:10px;
+    flex-wrap: wrap;
+}
+
+.products-box{
+    text-align: center;
+    flex-basis:20%;
+}
+
+.products-box img{
+    border-radius: 10px;
+}
+
+/* Contact us */
+.contact-form{
+    width:500px;
+    margin-top: 100px;
+    margin-left: 550px;
+    margin-right:150px;
+    margin-bottom:100px;
+    background-color: #1D232C;
+    color:white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+   
+}
+.contact-heading{
+    padding: 5px;
+    margin-left:50px;
+    padding-top: 20px;
+    
+}
+
+.form-box{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    
+}
+input,textarea{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+label{
+    font-size: small;
+}
+.contact-button{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top: 10px;
+    background-color:blue;
+    color:white;
+    cursor:pointer;
+    border-radius: 10px;
+    border:none;
+
+}
+/* Media Query */
+@media screen and (max-width:700px){
+    .navbar-menu-toggle{
+        display: block;
+        cursor: pointer;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display:none;
+    }
+    .service-container-1{
+        display:none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+
+}
